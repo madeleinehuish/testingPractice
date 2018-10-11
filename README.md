@@ -1,0 +1,1 @@
+This is a repository of practice testing applications I've been working with studying for interviews. I've borrowed from various different sources as well as modified some things on my own to practice.
