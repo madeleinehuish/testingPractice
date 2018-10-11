@@ -1,4 +1,4 @@
 .env
-supertestExample/node_modules
-starwars_checks/node_modules
-defaultExpressAppTest/node_modules
+/supertestExample/node_modules
+/starwars_checks/node_modules
+/defaultExpressAppTest/node_modules
