@@ -8,3 +8,12 @@ describe('homepage', () => {
 			.expect(/Hello Madeleine!/, done)
 	})
 })
+
+describe('contact form', () => {
+	it('thanks the user after they fill out form', done => {
+		request(app).post('/contact')
+			.send({name: "Madeleine"})
+			.expect(302)
+			.expect('Location',/\/thank_you/, done)
+	})
+})
