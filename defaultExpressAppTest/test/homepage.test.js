@@ -14,6 +14,10 @@ describe('contact form', () => {
 		request(app).post('/contact')
 			.send({name: "Madeleine"})
 			.expect(302)
-			.expect('Location',/\/thank_you/, done)
+			.expect('Location',/\/thank-you/, () => {
+				request(app).get('/thank-you')
+					.expect(200)
+					.expect(/Thank you/, done)
+			})
 	})
 })

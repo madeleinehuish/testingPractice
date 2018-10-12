@@ -1,7 +1,9 @@
-const should = require('should');
+//this was from a simple youtube video
+
+// const should = require('should');
+// const util = require('util');
 const request = require('request');
 const expect = require('chai').expect;
-const util = require('util');
 const baseUrl = 'https://swapi.co/api';
 
 describe('return Luke', ()=> {

@@ -7,7 +7,11 @@ router.get('/', function(req, res, next) {
 });
 
 router.post('/contact', function(req, res, next) {
-  res.redirect('/thank_you');
+  res.redirect('/thank-you');
+});
+
+router.get('/thank-you', function(req, res, next) {
+  res.render('index', { title: 'Thank you'});
 });
 
 module.exports = router;
